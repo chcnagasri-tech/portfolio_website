@@ -1,73 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
-  <meta name="description" content="Personal Portfolio Website">
-  <meta name="keywords" content="Portfolio, HTML5, Accessibility">
-  <meta name="author" content="Your Name">
+<meta name="description" content="Responsive Portfolio Website">
+<meta name="keywords" content="Portfolio, HTML, CSS, Responsive">
+<meta name="author" content="Your Name">
 
-  <title>My Portfolio</title>
+<title>Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header>
-    <nav aria-label="Main Navigation">
-      <h1>My Portfolio</h1>
+<header>
+<nav>
+<h1>My Portfolio</h1>
 
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 
-  <!-- Main -->
-  <main>
+<button onclick="toggleTheme()">Dark Mode</button>
 
-    <!-- Hero Section -->
-    <section aria-labelledby="hero-title">
-      <h2 id="hero-title">Welcome to My Portfolio</h2>
+</nav>
+</header>
 
-      <img src="images/profile.jpg"
-           alt="Profile photo of the portfolio owner"
-           width="200">
+<main class="container">
 
-      <p>
-        I am a web development student interested in
-        HTML, CSS, JavaScript and accessibility.
-      </p>
-    </section>
+<section class="hero">
+<img src="images/profile.webp" alt="Profile Image">
 
-    <!-- Skills -->
-    <section aria-labelledby="skills-title">
-      <h2 id="skills-title">Skills</h2>
+<div>
+<h2>Hello, I'm a Web Developer</h2>
 
-      <article>
-        <h3>Frontend</h3>
-        <p>HTML5, CSS3, JavaScript</p>
-      </article>
+<p>
+Responsive portfolio website using HTML5,
+CSS3, Flexbox, Grid and Accessibility.
+</p>
+</div>
 
-      <article>
-        <h3>Accessibility</h3>
-        <p>Semantic HTML and WCAG practices</p>
-      </article>
-    </section>
+</section>
 
-  </main>
+<section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 My Portfolio</p>
-  </footer>
+<h2>Skills</h2>
+
+<div class="grid">
+
+<article class="card">
+<h3>HTML5</h3>
+<p>Semantic HTML Structure</p>
+</article>
+
+<article class="card">
+<h3>CSS3</h3>
+<p>Responsive Web Design</p>
+</article>
+
+<article class="card">
+<h3>JavaScript</h3>
+<p>Interactive UI Features</p>
+</article>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Portfolio Website</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
